@@ -1,71 +1,134 @@
-# 3.95" 480×480 TFT MIPI module (ST7102) — documentation & samples
+<p align="left"><img alt="OSPTEK" src="./images/logo.png" width="200" /></p>
 
-**简体中文：** [`README.md`](README.md)
+<h1 align="center">OSPTEK 3.95″ TFT 480×480 (ST7102 · MIPI)</h1>
+
+<p align="center"><b>Square TFT module · MIPI · ST7102 · capacitive touch</b></p>
+
+<p align="center"><a href="./README.md">简体中文</a> | English</p>
+
+<p align="center">
+  <img alt="Size: 3.95 inch" src="https://img.shields.io/badge/Size-3.95%22-3498DB?style=flat-square" />
+  <img alt="Resolution: 480x480" src="https://img.shields.io/badge/Resolution-480%C3%97480-8E44AD?style=flat-square" />
+  <img alt="Interface: MIPI" src="https://img.shields.io/badge/Interface-MIPI-27AE60?style=flat-square" />
+  <img alt="Driver: ST7102" src="https://img.shields.io/badge/Driver-ST7102-E7352C?style=flat-square" />
+</p>
+
+<p align="center"><img alt="OSPTEK 3.95″ 480×480 TFT MIPI module (ST7102) product image" src="./images/product.png" width="640" /></p>
+
+## Contents
+
+- [Overview](#overview)
+- [Specifications](#specifications)
+- [Sample projects](#sample-projects)
+- [Repository layout](#repository-layout)
+- [Resources](#resources)
+- [Buy](#buy)
+- [Support](#support)
 
 ---
 
-> This repository provides **sample projects** for this module, together with datasheets, specifications, and interface / bring-up documentation for selection reference and integration.
+## Overview
 
-## Product overview
+OSPTEK **3.95″ 480×480 TFT** is a **MIPI** color display module driven by **ST7102**, with capacitive touch (**ST7123**). Suited to square HMI, instruments, and mid-size interactive panels.
 
-| Item | Description |
-|:--|:--|
-| Module | 3.95-inch **TFT** panel, **480×480** resolution |
-| Interface | **MIPI** |
-| Driver IC | **ST7102** |
-| Spec ID | **`3.95-tft-480x480-mipi-st7102`** is the common product designation in documentation |
+Spec ID (repository name): `3.95-tft-480x480-mipi-st7102`
 
----
+Current module version: **YDP395B007-V4**. Electrical and mechanical details follow [`docs/YDP395B007-V4.pdf`](./docs/YDP395B007-V4.pdf).
+
+## Specifications
+
+| Item | Spec |
+| ---- | ---- |
+| Size | 3.95 inch |
+| Type | TFT / IPS (color) |
+| Resolution | 480×480 |
+| Interface | MIPI |
+| Driver IC | ST7102 |
+| Touch driver | ST7123 |
+
+> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+
+## Sample projects
+
+| Description | Path |
+| ---- | ---- |
+| ESP32-P4 · ST7102 MIPI + esp-lvgl-port / LVGL9 | [`examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/`](./examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/) |
+| ESP32-P4 · LVGL9 + TE | [`examples/with-te/esp32p4-idf5_st7102-mipi_lvgl9-common-demo/`](./examples/with-te/esp32p4-idf5_st7102-mipi_lvgl9-common-demo/) |
+| ESP32-P4 · JPEG decode | [`examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode/`](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode/) |
+| ESP32-P4 · JPEG decode + LVGL9 | [`examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9/`](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9/) |
+| ESP32-P4 · JPEG decode + digital clock + LVGL9 | [`examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_digital-clock_lvgl-v9/`](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_digital-clock_lvgl-v9/) |
+| ESP32-P4 · JPEG batch loop display | [`examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_batch-loop-display/`](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_batch-loop-display/) |
+| ESP32-P4 · JPEG batch loop display + LVGL9 | [`examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9_batch-loop-display/`](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9_batch-loop-display/) |
+| ESP32-P4 · MJPEG decode | [`examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode/`](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode/) |
+| ESP32-P4 · MJPEG decode + LVGL9 | [`examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9/`](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9/) |
+| ESP32-P4 · MJPEG batch loop display | [`examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display/`](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display/) |
+| ESP32-P4 · MJPEG batch loop display + LVGL9 | [`examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display_lvgl-v9/`](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display_lvgl-v9/) |
+| ESP32-P4 · MJPEG decode (dual-core) | [`examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_dual-core/`](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_dual-core/) |
+| ESP32-P4 · MJPEG decode + LVGL9 (dual-core) | [`examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9_dual-core/`](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9_dual-core/) |
 
 ## Repository layout
 
-### Top-level
+```text
+3.95-tft-480x480-mipi-st7102/
+├── README.md
+├── README_EN.md
+├── MODULE_VERSION.md
+├── LICENSE
+├── images/          # README assets
+├── docs/            # datasheets, init, adapter board
+└── examples/        # sample projects
+```
 
-| Path | Contents |
-|:--|:--|
-| `docs/` | Datasheets, specifications, initialization notes, adapter schematics |
-| `examples/` | **Sample projects** by category |
+## Resources
 
-### `examples/` layout
+### Product files
 
-| Location | Description (internal package folder) |
-|:--|:--|
-| `examples/` root | **ESP-IDF代码** (esp-lvgl-port + LVGL9) |
-| `with-te/` | **屏幕防撕裂代码** |
-| `jpg-decoder/` | **jpeg解码** |
-| `mjpeg/` | **mjpeg代码** |
+| Resource | Link |
+| ---- | ---- |
+| Product datasheet (YDP395B007-V4) | [`docs/YDP395B007-V4.pdf`](./docs/YDP395B007-V4.pdf) |
+| Driver IC datasheet (ST7102) | [`docs/ST7102_Datasheet_V0.22.pdf`](./docs/ST7102_Datasheet_V0.22.pdf) |
+| Init sequence (text) | [`docs/CODE.txt`](./docs/CODE.txt) |
+| 3.95″ ST7102 MIPI board (V1.1) | [`docs/3.95 ST7102 MIPI屏幕V1.1.pdf`](./docs/3.95%20ST7102%20MIPI%E5%B1%8F%E5%B9%95V1.1.pdf) |
 
-### Sample project paths
+### Samples
 
-#### Baseline (`examples/` root)
+- [ESP32-P4 ST7102 MIPI + LVGL9](./examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/)
+- [ESP32-P4 LVGL9 + TE](./examples/with-te/esp32p4-idf5_st7102-mipi_lvgl9-common-demo/)
+- [ESP32-P4 JPEG decode](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode/)
+- [ESP32-P4 JPEG decode + LVGL9](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9/)
+- [ESP32-P4 JPEG decode + digital clock + LVGL9](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_digital-clock_lvgl-v9/)
+- [ESP32-P4 JPEG batch loop display](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_batch-loop-display/)
+- [ESP32-P4 JPEG batch loop display + LVGL9](./examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9_batch-loop-display/)
+- [ESP32-P4 MJPEG decode](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode/)
+- [ESP32-P4 MJPEG decode + LVGL9](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9/)
+- [ESP32-P4 MJPEG batch loop display](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display/)
+- [ESP32-P4 MJPEG batch loop display + LVGL9](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display_lvgl-v9/)
+- [ESP32-P4 MJPEG decode (dual-core)](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_dual-core/)
+- [ESP32-P4 MJPEG decode + LVGL9 (dual-core)](./examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9_dual-core/)
 
-| Description | Path |
-|:--|:--|
-| esp-lvgl-port + LVGL9 | `examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/` |
+## Buy
 
-#### Tear avoidance (`with-te/`)
+<p align="center">
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+</p>
 
-| Description | Path |
-|:--|:--|
-| LVGL9 common demo | `examples/with-te/esp32p4-idf5_st7102-mipi_lvgl9-common-demo/` |
+**Overseas (AliExpress)**
 
-#### JPEG decode (`jpg-decoder/`)
+- Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
 
-| Description | Path |
-|:--|:--|
-| JPEG decode | `examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode/` |
-| JPEG decode + LVGL9 | `examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9/` |
-| JPEG decode + digital clock + LVGL9 | `examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_digital-clock_lvgl-v9/` |
-| JPEG batch loop display | `examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_batch-loop-display/` |
-| JPEG batch loop display + LVGL9 | `examples/jpg-decoder/p4-idf_st7102-mipi_jpeg-decode_lvgl-v9_batch-loop-display/` |
+**China (Taobao)**
 
-#### MJPEG (`mjpeg/`)
+- Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
 
-| Description | Path |
-|:--|:--|
-| MJPEG decode | `examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode/` |
-| MJPEG decode + LVGL9 | `examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9/` |
-| MJPEG batch loop display | `examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display/` |
-| MJPEG batch loop display + LVGL9 | `examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_batch-loop-display_lvgl-v9/` |
-| MJPEG decode (dual-core) | `examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_dual-core/` |
-| MJPEG decode + LVGL9 (dual-core) | `examples/mjpeg/p4-idf_st7102-mipi_mjpeg-decode_lvgl-v9_dual-core/` |
+## Support
+
+- Technical support / product inquiry: <luyu@osptek.com>
+- QQ group: **985881096**
+- Website: <https://osptek.com/>
+- Feel free to open an Issue in this repository with any questions
+
+---
+
+<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
