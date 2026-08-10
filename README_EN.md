@@ -46,8 +46,7 @@ Repo id: `3.95-tft-480x480-mipi-st7102`
 
 <p align="center"><img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="320" /></p>
 
-**Notes:** Module.
-
+**Notes:** With touch (ST7123).
 ---
 
 ## How to Switch Branches
