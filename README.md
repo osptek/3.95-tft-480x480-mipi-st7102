@@ -47,6 +47,7 @@
 <p align="center"><img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="320" /></p>
 
 **说明：** 带触摸（ST7123）。
+
 ---
 
 ## 如何切换分支
