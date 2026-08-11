@@ -18,6 +18,7 @@
 - [About](#about)
 - [Versions](#versions)
 - [YDP395B007-V4](#ydp395b007-v4)
+- [YDP395BT008-V1](#ydp395bt008-v1)
 - [How to Switch Branches](#how-to-switch-branches)
 - [Where to Buy](#where-to-buy)
 - [Support](#support)
@@ -39,6 +40,7 @@ Repo id: `3.95-tft-480x480-mipi-st7102`
 | Version | Image | Notes |
 | ------- | ----- | ----- |
 | YDP395B007-V4 | <img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="120" /> | [Details](#ydp395b007-v4) |
+| YDP395BT008-V1 | — | [Details](#ydp395bt008-v1) |
 
 ---
 
@@ -47,6 +49,12 @@ Repo id: `3.95-tft-480x480-mipi-st7102`
 <p align="center"><img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="320" /></p>
 
 **Notes:** With touch (ST7123).
+
+---
+
+## YDP395BT008-V1
+
+**Notes:** In-Cell; with touch.
 
 ---
 
