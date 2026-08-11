@@ -54,7 +54,7 @@ Repo id: `3.95-tft-480x480-mipi-st7102`
 
 ## YDP395BT008-V1
 
-**Notes:** In-Cell; with touch.
+**Notes:** In-Cell; with touch (ST7123).
 
 ---
 
