@@ -40,7 +40,7 @@
 | 版本 | 宣传图 | 说明 |
 | ---- | ------ | ---- |
 | YDP395B007-V4 | <img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="120" /> | [查看详情](#ydp395b007-v4) |
-| YDP395BT008-V1 | — | [查看详情](#ydp395bt008-v1) |
+| YDP395BT008-V1 | <img alt="YDP395BT008-V1" src="./images/YDP395BT008-V1.png" width="120" /> | [查看详情](#ydp395bt008-v1) |
 
 ---
 
@@ -53,6 +53,8 @@
 ---
 
 ## YDP395BT008-V1
+
+<p align="center"><img alt="YDP395BT008-V1" src="./images/YDP395BT008-V1.png" width="320" /></p>
 
 **说明：** In-Cell，带触摸（ST7123）。
 
