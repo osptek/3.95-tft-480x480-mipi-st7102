@@ -28,7 +28,7 @@
 
 本仓库收录 **3.95 寸 480×480 TFT（MIPI · ST7102）** 显示模组资料。
 
-**根目录 README 为导航页**。下表可快速浏览各版本；点击「完整资料」进入对应**料号文件夹**（产品页、规格书、示例均在该目录内）。
+**根目录 README 为导航页**。下表可快速浏览各版本；点击「完整资料」进入 `versions/` 下对应**料号文件夹**（产品页、规格书、示例均在该目录内）。
 
 规格标识（仓库名）：`3.95-tft-480x480-mipi-st7102`
 
@@ -36,30 +36,30 @@
 
 ## 版本一览
 
-| 版本 | 宣传图 | 说明 |
-| ---- | ------ | ---- |
-| YDP395B007-V4 | <img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="120" /> | [完整资料](./YDP395B007-V4/) · [简介](#ydp395b007-v4) |
-| YDP395BT008-V1 | <img alt="YDP395BT008-V1" src="./images/YDP395BT008-V1.png" width="120" /> | [完整资料](./YDP395BT008-V1/) · [简介](#ydp395bt008-v1) |
+| 版本 | 宣传图 | 简介 | 完整资料 |
+| ---- | ------ | ---- | -------- |
+| YDP395B007-V4 | <img alt="YDP395B007-V4" src="./versions/YDP395B007-V4/images/product.png" width="120" /> | [简介](#ydp395b007-v4) | [完整资料](./versions/YDP395B007-V4/) |
+| YDP395BT008-V1 | <img alt="YDP395BT008-V1" src="./versions/YDP395BT008-V1/images/product.png" width="120" /> | [简介](#ydp395bt008-v1) | [完整资料](./versions/YDP395BT008-V1/) |
 
 ---
 
 ## YDP395B007-V4
 
-<p align="center"><img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="320" /></p>
+<p align="center"><img alt="YDP395B007-V4" src="./versions/YDP395B007-V4/images/product.png" width="320" /></p>
 
 **说明：** 带触摸（ST7123）。
 
-完整产品页、规格书与示例：[YDP395B007-V4/](./YDP395B007-V4/)
+完整产品页、规格书与示例：[versions/YDP395B007-V4/](./versions/YDP395B007-V4/)
 
 ---
 
 ## YDP395BT008-V1
 
-<p align="center"><img alt="YDP395BT008-V1" src="./images/YDP395BT008-V1.png" width="320" /></p>
+<p align="center"><img alt="YDP395BT008-V1" src="./versions/YDP395BT008-V1/images/product.png" width="320" /></p>
 
 **说明：** In-Cell，带触摸（ST7123）。
 
-完整产品页、规格书与示例：[YDP395BT008-V1/](./YDP395BT008-V1/)
+完整产品页、规格书与示例：[versions/YDP395BT008-V1/](./versions/YDP395BT008-V1/)
 
 ---
 

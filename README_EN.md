@@ -28,7 +28,7 @@
 
 This repository holds materials for the **3.95″ 480×480 TFT (MIPI · ST7102)** module family.
 
-The **root README is the navigation page**. Use the table below for a quick scan; open **Full docs** to enter that **part-number folder** (product page, datasheets, and examples live there).
+The **root README is the navigation page**. Use the table below for a quick scan; open **Full docs** to enter that **part-number folder** under `versions/` (product page, datasheets, and examples live there).
 
 Repo id: `3.95-tft-480x480-mipi-st7102`
 
@@ -36,30 +36,30 @@ Repo id: `3.95-tft-480x480-mipi-st7102`
 
 ## Versions
 
-| Version | Image | Notes |
-| ------- | ----- | ----- |
-| YDP395B007-V4 | <img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="120" /> | [Full docs](./YDP395B007-V4/) · [Summary](#ydp395b007-v4) |
-| YDP395BT008-V1 | <img alt="YDP395BT008-V1" src="./images/YDP395BT008-V1.png" width="120" /> | [Full docs](./YDP395BT008-V1/) · [Summary](#ydp395bt008-v1) |
+| Version | Image | Summary | Full docs |
+| ------- | ----- | ------- | --------- |
+| YDP395B007-V4 | <img alt="YDP395B007-V4" src="./versions/YDP395B007-V4/images/product.png" width="120" /> | [Summary](#ydp395b007-v4) | [Full docs](./versions/YDP395B007-V4/) |
+| YDP395BT008-V1 | <img alt="YDP395BT008-V1" src="./versions/YDP395BT008-V1/images/product.png" width="120" /> | [Summary](#ydp395bt008-v1) | [Full docs](./versions/YDP395BT008-V1/) |
 
 ---
 
 ## YDP395B007-V4
 
-<p align="center"><img alt="YDP395B007-V4" src="./images/YDP395B007-V4.png" width="320" /></p>
+<p align="center"><img alt="YDP395B007-V4" src="./versions/YDP395B007-V4/images/product.png" width="320" /></p>
 
 **Notes:** With touch (ST7123).
 
-Full product page, datasheets, and examples: [YDP395B007-V4/](./YDP395B007-V4/)
+Full product page, datasheets, and examples: [versions/YDP395B007-V4/](./versions/YDP395B007-V4/)
 
 ---
 
 ## YDP395BT008-V1
 
-<p align="center"><img alt="YDP395BT008-V1" src="./images/YDP395BT008-V1.png" width="320" /></p>
+<p align="center"><img alt="YDP395BT008-V1" src="./versions/YDP395BT008-V1/images/product.png" width="320" /></p>
 
 **Notes:** In-Cell; with touch (ST7123).
 
-Full product page, datasheets, and examples: [YDP395BT008-V1/](./YDP395BT008-V1/)
+Full product page, datasheets, and examples: [versions/YDP395BT008-V1/](./versions/YDP395BT008-V1/)
 
 ---
 

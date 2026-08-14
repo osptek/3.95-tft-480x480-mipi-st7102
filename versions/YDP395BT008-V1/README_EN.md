@@ -4,7 +4,7 @@
 
 <p align="center"><b>Square TFT module · MIPI · ST7102 · In-Cell (ST7123)</b></p>
 
-<p align="center"><a href="./README.md">简体中文</a> | English · <a href="../README_EN.md">Family index</a></p>
+<p align="center"><a href="./README.md">简体中文</a> | English · <a href="../../README_EN.md">Family index</a></p>
 
 <p align="center">
   <img alt="Size: 3.95 inch" src="https://img.shields.io/badge/Size-3.95%22-3498DB?style=flat-square" />
@@ -57,13 +57,14 @@ Current module version: **YDP395BT008-V1**. Electrical and mechanical details fo
 ## Repository layout
 
 ```text
-3.95-tft-480x480-mipi-st7102/          # repo root (nav: ../README_EN.md)
-└── YDP395BT008-V1/                    # full materials for this part number
-    ├── README.md
-    ├── README_EN.md
-    ├── images/                        # README assets
-    ├── docs/                          # datasheets
-    └── examples/                      # sample projects
+3.95-tft-480x480-mipi-st7102/          # repo root (nav: ../../README_EN.md)
+└── versions/
+    └── YDP395BT008-V1/                # full materials for this part number
+        ├── README.md
+        ├── README_EN.md
+        ├── images/                    # README assets
+        ├── docs/                      # datasheets
+        └── examples/                  # sample projects
 ```
 
 ## Resources

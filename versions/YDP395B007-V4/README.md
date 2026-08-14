@@ -4,7 +4,7 @@
 
 <p align="center"><b>方形 TFT 模组 · MIPI · ST7102 · 电容触摸</b></p>
 
-<p align="center"><a href="./README_EN.md">English</a> | 简体中文 · <a href="../README.md">规格族索引</a></p>
+<p align="center"><a href="./README_EN.md">English</a> | 简体中文 · <a href="../../README.md">规格族索引</a></p>
 
 <p align="center">
   <img alt="Size: 3.95 inch" src="https://img.shields.io/badge/Size-3.95%22-3498DB?style=flat-square" />
@@ -69,13 +69,14 @@ OSPTEK **3.95 寸 480×480 TFT** 是一款 **MIPI** 接口彩色显示模组，�
 ## 仓库结构
 
 ```text
-3.95-tft-480x480-mipi-st7102/          # 仓库根（导航见 ../README.md）
-└── YDP395B007-V4/                     # 本料号完整资料
-    ├── README.md
-    ├── README_EN.md
-    ├── images/                        # README 用图
-    ├── docs/                          # 规格书、驱动手册、初始化等
-    └── examples/                      # 示例工程
+3.95-tft-480x480-mipi-st7102/          # 仓库根（导航见 ../../README.md）
+└── versions/
+    └── YDP395B007-V4/                 # 本料号完整资料
+        ├── README.md
+        ├── README_EN.md
+        ├── images/                    # README 用图
+        ├── docs/                      # 规格书、驱动手册、初始化等
+        └── examples/                  # 示例工程
 ```
 
 ## 相关资料
